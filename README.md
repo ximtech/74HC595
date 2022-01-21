@@ -56,8 +56,7 @@ int main() {
     ShiftRegister shiftRegister = initShiftRegister(SPI1, CHIP_SELECT_GPIO_Port, CHIP_SELECT_Pin, SHIFT_REGISTER_COUNT, REG_RESET_GPIO_Port, REG_RESET_Pin);
     uint16_t binaryCounter = 0;
     
-    while(1) {
-        
+    while (1) {
         sendU16ToShiftRegister(&shiftRegister, ledBar);
         latchShiftRegister(&shiftRegister);
         binaryCounter++;
