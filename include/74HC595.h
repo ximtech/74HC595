@@ -2,7 +2,6 @@
 
 #include <stdint.h>
 #include <stdlib.h>
-#include "main.h"
 #include "SPI_Polling.h"
 
 /*
