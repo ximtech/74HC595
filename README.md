@@ -57,7 +57,7 @@ int main() {
     uint16_t binaryCounter = 0;
     
     while (1) {
-        sendU16ToShiftRegister(&shiftRegister, ledBar);
+        sendU16ToShiftRegister(&shiftRegister, binaryCounter);
         latchShiftRegister(&shiftRegister);
         binaryCounter++;
         delay_ms(DELAY);
